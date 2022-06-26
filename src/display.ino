@@ -93,13 +93,14 @@ void print_item(int item)
         if (ibutton_get_mode() == 0){
             // display.print(">");
             display.print(selectedMenuItem);
+            display.print(">");
         }
         else
         {
-            display.print("w");
+            display.print("w>");
         }
     } else {
-        display.print(" ");
+        display.print("  ");
     }
     byte* currentId = get_item(item);
     char buffer[2];
